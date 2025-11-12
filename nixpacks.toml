@@ -1,0 +1,11 @@
+[phases.setup]
+nixPkgs = ["ant", "jdk17"]
+
+[phases.install]
+cmds = [
+  "ant war"
+]
+
+[start]
+cmd = "java -jar dist/Warehouse.war"
+
